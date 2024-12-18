@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dad7d7;
+    color: #333;
+    margin: 0%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #272626;
+    color: white;
+    height: 60px;
+}
+
+.navbar img{
+  width: 70px;
+  height: 60px;
+  margin-top: -20px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffc507;
+    padding-left: 90px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-top: -2px;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.navbar li:hover{
+    border-bottom: 3.5px solid rgb(241, 175, 8);
+}
+
+.hero {
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding-left: 5%;
+  background: url("images/women-shopping4.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+    font-size: 4.5em;
+    font-family: "Bree Serif", serif;
+    font-weight: 590;
+
+}
+
+.hero p {
+    font-size: 1.7em;
+    font-weight: 600;
+    font-family: "Sofia", cursive;
+}
+
+.hero button {
+    padding: 18px 35px;
+    font-size: 1.2em;
+    background-color: #f0a500;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.hero button:hover {
+    background-color: #e08900;
+}
+
+.mySlides {
+  display: block;
+  max-height: 600px;
+}
+.mySlides img {
+  height: 600px;
+  width: 600px;
+}
+  
+  /* Slideshow container */
+.slideshow-container {
+  width: 600px;
+  z-index: -1;
+  padding: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dotDiv{
+  text-align: center;
+  padding-top: 5px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade; 
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+@media (max-width: 805px) {
+  .hero h1 {font-size: 4em}
+  .hero p {font-size: 1.5em;}
+  .mySlides img{width: 500px;}
+}
+
+@media (max-width: 715px) {
+  .hero h1 {font-size: 3.5em}
+  .mySlides img{width: 400px;}
+}
+
+@media (max-width: 625px) {
+  .hero h1 {font-size: 3em}
+  .mySlides img{width: 300px;}
+}
+
+@media (max-width: 599px){
+  body {width: 100%;}
+}
+
+@media (max-width: 535px) {
+  .hero h1 {font-size: 2.5em}
+}
+
+
